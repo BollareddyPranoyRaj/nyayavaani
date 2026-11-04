@@ -26,3 +26,6 @@ Added bandpass filter simulation from 300Hz to 3400Hz.
 ### [008] feat(audio): add line noise and jitter modulation buffer generator - 2026-11-05 02:37:00
 Simulate realistic mobile carrier line static and jitter.
 
+### [009] perf(audio): optimize WAV byte stream packing with struct pack - 2026-11-05 03:15:00
+Low-latency in-memory PCM audio generation.
+
