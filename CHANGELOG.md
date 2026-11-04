@@ -14,3 +14,6 @@ Pinned dependencies for reproducible builds.
 ### [004] config(env): add .env.example with Gnani Vachana platform defaults - 2026-11-05 00:05:00
 Added environment variable template for API keys.
 
+### [005] chore(git): configure .gitignore for python virtual environments and artifacts - 2026-11-05 00:43:00
+Prevent committing venv and temporary PDF dockets.
+
