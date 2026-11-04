@@ -32,3 +32,6 @@ Low-latency in-memory PCM audio generation.
 ### [010] test(audio): add unit tests for synthetic telephony carrier generation - 2026-11-05 03:53:00
 Validated 8kHz wave output headers and sample rates.
 
+### [011] refactor(audio): add docstrings and type annotations to audio processor - 2026-11-05 04:31:00
+Standardized type hints across audio methods.
+
