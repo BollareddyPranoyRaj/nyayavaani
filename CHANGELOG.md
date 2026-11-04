@@ -35,3 +35,6 @@ Validated 8kHz wave output headers and sample rates.
 ### [011] refactor(audio): add docstrings and type annotations to audio processor - 2026-11-05 04:31:00
 Standardized type hints across audio methods.
 
+### [012] feat(stt): create Gnani AI client skeleton with Vachana endpoints - 2026-11-05 05:09:00
+Scaffolded gnani_client.py with base configuration.
+
