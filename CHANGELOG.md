@@ -23,3 +23,6 @@ Created audio_processor.py for telephony signal handling.
 ### [007] feat(audio): implement 8kHz G.711 telephony frequency simulation - 2026-11-05 01:59:00
 Added bandpass filter simulation from 300Hz to 3400Hz.
 
+### [008] feat(audio): add line noise and jitter modulation buffer generator - 2026-11-05 02:37:00
+Simulate realistic mobile carrier line static and jitter.
+
