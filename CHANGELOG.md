@@ -41,3 +41,6 @@ Scaffolded gnani_client.py with base configuration.
 ### [013] feat(stt): implement Prisma v3.0 REST transcription payload handler - 2026-11-05 05:47:00
 Integrated multipart audio file upload to /api/v1/stt.
 
+### [014] feat(stt): add support for indic-auto language identification - 2026-11-05 06:25:00
+Allow Prisma to automatically detect native Indian dialects.
+
