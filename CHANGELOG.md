@@ -110,3 +110,6 @@ Validated mapping to BNS Sec 351 and Sec 329.
 ### [036] test(evon): add test case for instant UPI cashback phishing - 2026-11-05 20:21:00
 Validated mapping to BNS Sec 318 and IT Act 66C.
 
+### [037] refactor(evon): decouple legal knowledge base for modular expansion - 2026-11-05 20:59:00
+Created extensible dictionary structure for new state laws.
+
