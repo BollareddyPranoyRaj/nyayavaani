@@ -107,3 +107,6 @@ Validated mapping accuracy to BNS Sec 308 and IT Act 66D.
 ### [035] test(evon): add test case for agrarian land dispute threats - 2026-11-05 19:43:00
 Validated mapping to BNS Sec 351 and Sec 329.
 
+### [036] test(evon): add test case for instant UPI cashback phishing - 2026-11-05 20:21:00
+Validated mapping to BNS Sec 318 and IT Act 66C.
+
