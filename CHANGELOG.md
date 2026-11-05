@@ -71,3 +71,6 @@ Scaffolded evon_reasoning.py for BNS 2023.
 ### [023] feat(evon): add Section 308(2) BNS 2023 extortion classification - 2026-11-05 12:07:00
 Mapped digital arrest threats to Section 308(2).
 
+### [024] feat(evon): add Section 318(4) BNS 2023 cheating and inducement mapping - 2026-11-05 12:45:00
+Mapped financial fraud and payment scams to BNS 318.
+
