@@ -59,3 +59,6 @@ High-fidelity mock responses for demo safety.
 ### [019] test(stt): test Prisma STT handling of code-mixed Hindi phrases - 2026-11-05 09:35:00
 Verified parsing of colloquial Hinglish sentences.
 
+### [020] test(stt): test Telugu language dialect recognition with noisy audio - 2026-11-05 10:13:00
+Validated transcription of rural Warangal dialect.
+
