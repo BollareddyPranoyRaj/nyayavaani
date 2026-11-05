@@ -134,3 +134,6 @@ Ensure seamless sound output even with no active internet.
 ### [044] test(tts): verify audio buffer packaging and container headers - 2026-11-06 01:25:00
 Checked WAV linear PCM headers for browser compatibility.
 
+### [045] perf(tts): reduce speech synthesis latency with cached voice buffers - 2026-11-06 02:03:00
+Minimized roundtrip time for standard legal disclaimers.
+
