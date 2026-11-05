@@ -95,3 +95,6 @@ Automated extraction of suspect details and transaction IDs.
 ### [031] feat(evon): add Golden Hour calculation for financial cyber fraud - 2026-11-05 17:11:00
 Flagging transactions occurring within the 3-hour freeze window.
 
+### [032] feat(evon): implement victim distress and empathy triage protocol - 2026-11-05 17:49:00
+Detect caller panic level to dynamically soften tone.
+
