@@ -113,3 +113,6 @@ Validated mapping to BNS Sec 318 and IT Act 66C.
 ### [037] refactor(evon): decouple legal knowledge base for modular expansion - 2026-11-05 20:59:00
 Created extensible dictionary structure for new state laws.
 
+### [038] feat(tts): implement Timbre v3.0 voice synthesis request handler - 2026-11-05 21:37:00
+Connected to Gnani TTS endpoint /api/v1/tts.
+
