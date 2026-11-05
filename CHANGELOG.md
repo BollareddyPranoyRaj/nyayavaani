@@ -92,3 +92,6 @@ Citing unauthorized access to authentication credentials.
 ### [030] feat(evon): implement 5 Ws structured fact extractor (Who, When, Where) - 2026-11-05 16:33:00
 Automated extraction of suspect details and transaction IDs.
 
+### [031] feat(evon): add Golden Hour calculation for financial cyber fraud - 2026-11-05 17:11:00
+Flagging transactions occurring within the 3-hour freeze window.
+
