@@ -140,3 +140,6 @@ Minimized roundtrip time for standard legal disclaimers.
 ### [046] feat(fir): scaffold ReportLab PDF generation pipeline - 2026-11-06 02:41:00
 Created fir_generator.py with SimpleDocTemplate.
 
+### [047] feat(fir): design official BNSS 2023 Form 154 header layout - 2026-11-06 03:19:00
+Styled header matching Indian police station complaint formats.
+
