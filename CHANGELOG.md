@@ -143,3 +143,6 @@ Created fir_generator.py with SimpleDocTemplate.
 ### [047] feat(fir): design official BNSS 2023 Form 154 header layout - 2026-11-06 03:19:00
 Styled header matching Indian police station complaint formats.
 
+### [048] feat(fir): add complainant metadata table with emergency tier badge - 2026-11-06 03:57:00
+Structured table with call duration, language, and tier.
+
