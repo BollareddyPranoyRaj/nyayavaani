@@ -83,3 +83,6 @@ Covered verbal threats and weapon brandishing.
 ### [027] feat(evon): add Section 329(3) BNS 2023 criminal trespass to farmland - 2026-11-05 14:39:00
 Covered unlawful entry onto agricultural property.
 
+### [028] feat(evon): integrate Information Technology Act Section 66D - 2026-11-05 15:17:00
+Citing cheating by personation using computer resource.
+
