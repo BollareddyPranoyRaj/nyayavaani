@@ -77,3 +77,6 @@ Mapped financial fraud and payment scams to BNS 318.
 ### [025] feat(evon): add Section 319(2) BNS 2023 cheating by personation - 2026-11-05 13:23:00
 Covered cyber impostors posing as police and customs.
 
+### [026] feat(evon): add Section 351(2) BNS 2023 criminal intimidation mapping - 2026-11-05 14:01:00
+Covered verbal threats and weapon brandishing.
+
