@@ -98,3 +98,6 @@ Flagging transactions occurring within the 3-hour freeze window.
 ### [032] feat(evon): implement victim distress and empathy triage protocol - 2026-11-05 17:49:00
 Detect caller panic level to dynamically soften tone.
 
+### [033] feat(evon): build bilingual citizen advisory generator (Hindi, Telugu, English) - 2026-11-05 18:27:00
+Generate immediate protective directives for callers.
+
