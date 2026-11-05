@@ -119,3 +119,6 @@ Connected to Gnani TTS endpoint /api/v1/tts.
 ### [039] feat(tts): integrate Nalini voice persona for Hindi spoken guidance - 2026-11-05 22:15:00
 Configured natural female voice for Hindi calming dialogue.
 
+### [040] feat(tts): integrate Kavya voice persona for Telugu spoken guidance - 2026-11-05 22:53:00
+Configured natural female voice for Telugu advisory.
+
