@@ -137,3 +137,6 @@ Checked WAV linear PCM headers for browser compatibility.
 ### [045] perf(tts): reduce speech synthesis latency with cached voice buffers - 2026-11-06 02:03:00
 Minimized roundtrip time for standard legal disclaimers.
 
+### [046] feat(fir): scaffold ReportLab PDF generation pipeline - 2026-11-06 02:41:00
+Created fir_generator.py with SimpleDocTemplate.
+

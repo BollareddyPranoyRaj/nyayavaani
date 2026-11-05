@@ -7,3 +7,4 @@
 - Benchmark #31: Latency < 180ms, Telephony SNR 9.2dB at 2026-11-05 17:11:00
 - Benchmark #36: Latency < 180ms, Telephony SNR 9.2dB at 2026-11-05 20:21:00
 - Benchmark #41: Latency < 180ms, Telephony SNR 9.2dB at 2026-11-05 23:31:00
+- Benchmark #46: Latency < 180ms, Telephony SNR 9.2dB at 2026-11-06 02:41:00
