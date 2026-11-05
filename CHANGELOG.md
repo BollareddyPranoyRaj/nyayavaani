@@ -50,3 +50,6 @@ Ensure words are transcribed in their respective native scripts.
 ### [016] feat(stt): add verbatim transcription mode support for legal compliance - 2026-11-05 07:41:00
 Preserve hesitations and filler words for police records.
 
+### [017] feat(stt): implement transliterate mode for Latin script representation - 2026-11-05 08:19:00
+Provide phonetic Latin rendering of Indic speech.
+
