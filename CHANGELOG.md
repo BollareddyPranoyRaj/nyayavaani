@@ -116,3 +116,6 @@ Created extensible dictionary structure for new state laws.
 ### [038] feat(tts): implement Timbre v3.0 voice synthesis request handler - 2026-11-05 21:37:00
 Connected to Gnani TTS endpoint /api/v1/tts.
 
+### [039] feat(tts): integrate Nalini voice persona for Hindi spoken guidance - 2026-11-05 22:15:00
+Configured natural female voice for Hindi calming dialogue.
+
