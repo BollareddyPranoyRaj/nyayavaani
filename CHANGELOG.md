@@ -47,3 +47,6 @@ Allow Prisma to automatically detect native Indian dialects.
 ### [015] feat(stt): configure codemix transcription mode for Hinglish - 2026-11-05 07:03:00
 Ensure words are transcribed in their respective native scripts.
 
+### [016] feat(stt): add verbatim transcription mode support for legal compliance - 2026-11-05 07:41:00
+Preserve hesitations and filler words for police records.
+
