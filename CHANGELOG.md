@@ -86,3 +86,6 @@ Covered unlawful entry onto agricultural property.
 ### [028] feat(evon): integrate Information Technology Act Section 66D - 2026-11-05 15:17:00
 Citing cheating by personation using computer resource.
 
+### [029] feat(evon): integrate Information Technology Act Section 66C for OTP theft - 2026-11-05 15:55:00
+Citing unauthorized access to authentication credentials.
+
