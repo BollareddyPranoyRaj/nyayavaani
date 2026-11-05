@@ -68,3 +68,6 @@ Added API parameter guide to docs/STT_GUIDE.md.
 ### [022] feat(evon): initialize legal reasoning core with Bharatiya Nyaya Sanhita - 2026-11-05 11:29:00
 Scaffolded evon_reasoning.py for BNS 2023.
 
+### [023] feat(evon): add Section 308(2) BNS 2023 extortion classification - 2026-11-05 12:07:00
+Mapped digital arrest threats to Section 308(2).
+
