@@ -56,3 +56,6 @@ Provide phonetic Latin rendering of Indic speech.
 ### [018] feat(stt): build offline fallback simulator for zero-fail hackathon testing - 2026-11-05 08:57:00
 High-fidelity mock responses for demo safety.
 
+### [019] test(stt): test Prisma STT handling of code-mixed Hindi phrases - 2026-11-05 09:35:00
+Verified parsing of colloquial Hinglish sentences.
+
