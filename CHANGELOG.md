@@ -44,3 +44,6 @@ Integrated multipart audio file upload to /api/v1/stt.
 ### [014] feat(stt): add support for indic-auto language identification - 2026-11-05 06:25:00
 Allow Prisma to automatically detect native Indian dialects.
 
+### [015] feat(stt): configure codemix transcription mode for Hinglish - 2026-11-05 07:03:00
+Ensure words are transcribed in their respective native scripts.
+
