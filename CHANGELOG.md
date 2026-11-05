@@ -122,3 +122,6 @@ Configured natural female voice for Hindi calming dialogue.
 ### [040] feat(tts): integrate Kavya voice persona for Telugu spoken guidance - 2026-11-05 22:53:00
 Configured natural female voice for Telugu advisory.
 
+### [041] feat(tts): integrate Arun voice persona for Indian English delivery - 2026-11-05 23:31:00
+Configured neutral male voice for English legal readouts.
+
