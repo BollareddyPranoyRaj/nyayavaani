@@ -149,3 +149,6 @@ Structured table with call duration, language, and tier.
 ### [049] feat(fir): format statutory legal sections table with penalties - 2026-11-06 04:35:00
 Clear grid displaying BNS sections, scope, and punishments.
 
+### [050] feat(fir): add bilingual verbatim telephonic testimony section - 2026-11-06 05:13:00
+Side-by-side original vernacular text and English translation.
+
