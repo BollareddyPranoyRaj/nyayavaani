@@ -53,3 +53,6 @@ Preserve hesitations and filler words for police records.
 ### [017] feat(stt): implement transliterate mode for Latin script representation - 2026-11-05 08:19:00
 Provide phonetic Latin rendering of Indic speech.
 
+### [018] feat(stt): build offline fallback simulator for zero-fail hackathon testing - 2026-11-05 08:57:00
+High-fidelity mock responses for demo safety.
+
