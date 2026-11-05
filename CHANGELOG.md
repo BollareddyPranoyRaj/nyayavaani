@@ -146,3 +146,6 @@ Styled header matching Indian police station complaint formats.
 ### [048] feat(fir): add complainant metadata table with emergency tier badge - 2026-11-06 03:57:00
 Structured table with call duration, language, and tier.
 
+### [049] feat(fir): format statutory legal sections table with penalties - 2026-11-06 04:35:00
+Clear grid displaying BNS sections, scope, and punishments.
+
