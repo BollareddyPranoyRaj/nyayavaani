@@ -74,3 +74,6 @@ Mapped digital arrest threats to Section 308(2).
 ### [024] feat(evon): add Section 318(4) BNS 2023 cheating and inducement mapping - 2026-11-05 12:45:00
 Mapped financial fraud and payment scams to BNS 318.
 
+### [025] feat(evon): add Section 319(2) BNS 2023 cheating by personation - 2026-11-05 13:23:00
+Covered cyber impostors posing as police and customs.
+
