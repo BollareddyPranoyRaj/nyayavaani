@@ -62,3 +62,6 @@ Verified parsing of colloquial Hinglish sentences.
 ### [020] test(stt): test Telugu language dialect recognition with noisy audio - 2026-11-05 10:13:00
 Validated transcription of rural Warangal dialect.
 
+### [021] docs(stt): document Prisma v3.0 model parameters and error codes - 2026-11-05 10:51:00
+Added API parameter guide to docs/STT_GUIDE.md.
+
