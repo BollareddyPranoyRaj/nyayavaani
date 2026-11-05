@@ -125,3 +125,6 @@ Configured natural female voice for Telugu advisory.
 ### [041] feat(tts): integrate Arun voice persona for Indian English delivery - 2026-11-05 23:31:00
 Configured neutral male voice for English legal readouts.
 
+### [042] feat(tts): add inline audio tags (<pauses>, pitch) for emotional tone - 2026-11-06 00:09:00
+Insert pauses to create a soothing, professional cadence.
+
