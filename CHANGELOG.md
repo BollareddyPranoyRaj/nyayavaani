@@ -101,3 +101,6 @@ Detect caller panic level to dynamically soften tone.
 ### [033] feat(evon): build bilingual citizen advisory generator (Hindi, Telugu, English) - 2026-11-05 18:27:00
 Generate immediate protective directives for callers.
 
+### [034] test(evon): add test case for Digital Arrest scam classification - 2026-11-05 19:05:00
+Validated mapping accuracy to BNS Sec 308 and IT Act 66D.
+
