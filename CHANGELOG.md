@@ -128,3 +128,6 @@ Configured neutral male voice for English legal readouts.
 ### [042] feat(tts): add inline audio tags (<pauses>, pitch) for emotional tone - 2026-11-06 00:09:00
 Insert pauses to create a soothing, professional cadence.
 
+### [043] feat(tts): add fallback synthetic audio generator for offline playback - 2026-11-06 00:47:00
+Ensure seamless sound output even with no active internet.
+
