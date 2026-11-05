@@ -38,3 +38,6 @@ Standardized type hints across audio methods.
 ### [012] feat(stt): create Gnani AI client skeleton with Vachana endpoints - 2026-11-05 05:09:00
 Scaffolded gnani_client.py with base configuration.
 
+### [013] feat(stt): implement Prisma v3.0 REST transcription payload handler - 2026-11-05 05:47:00
+Integrated multipart audio file upload to /api/v1/stt.
+
