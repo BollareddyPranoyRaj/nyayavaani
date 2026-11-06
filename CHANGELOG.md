@@ -218,3 +218,6 @@ Interactive buttons for browser MediaRecorder API.
 ### [072] feat(ui): build Timbre vernacular voice agent playback card - 2026-11-06 19:09:00
 Audio preview card with play button and voice persona badge.
 
+### [073] feat(ui): create Prisma v3.0 verbatim transcription display box - 2026-11-06 19:47:00
+High-contrast container with auto-detected dialect badge.
+
