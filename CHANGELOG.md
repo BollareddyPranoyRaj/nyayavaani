@@ -230,3 +230,6 @@ Display categorized crime, financial stake, and urgency tier.
 ### [076] feat(ui): build statutory BNS 2023 sections cited list - 2026-11-06 21:41:00
 Glowing golden badges for cited criminal sections.
 
+### [077] feat(ui): implement instant PDF FIR download action card - 2026-11-06 22:19:00
+Direct download button linking to generated complaint dossier.
+
