@@ -164,3 +164,6 @@ Patched styling imports for cross-platform support.
 ### [054] test(fir): test complete PDF compilation with mock complaint data - 2026-11-06 07:45:00
 Verified output file validity and byte size > 5KB.
 
+### [055] style(fir): refine typography colors and border padding in PDF - 2026-11-06 08:23:00
+Enhanced contrast using #1a365d and #9b2c2c legal accents.
+
