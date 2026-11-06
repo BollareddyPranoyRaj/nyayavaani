@@ -206,3 +206,6 @@ Included 24x7 emergency badge and active model pills.
 ### [068] feat(ui): design telephony dispatch card with caller metadata - 2026-11-06 16:37:00
 Show caller avatar, name, location, and noise rating.
 
+### [069] feat(ui): implement real-time canvas waveform visualizer - 2026-11-06 17:15:00
+Animated audio waves reflecting ambient telephonic noise.
+
