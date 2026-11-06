@@ -242,3 +242,6 @@ Deep tactical blue and charcoal background scheme.
 ### [080] style(css): add responsive grid layout for desktop and tablet screens - 2026-11-07 00:13:00
 Two-column grid adapting smoothly across screen sizes.
 
+### [081] style(css): implement glowing status pills and pulsing animations - 2026-11-07 00:51:00
+CSS keyframes for blinking emergency radar indicators.
+
