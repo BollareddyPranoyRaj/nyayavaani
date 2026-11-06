@@ -245,3 +245,6 @@ Two-column grid adapting smoothly across screen sizes.
 ### [081] style(css): implement glowing status pills and pulsing animations - 2026-11-07 00:51:00
 CSS keyframes for blinking emergency radar indicators.
 
+### [082] style(css): style typography with Plus Jakarta Sans and JetBrains Mono - 2026-11-07 01:29:00
+Modern, legible typography tailored for demo recordings.
+
