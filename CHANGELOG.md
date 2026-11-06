@@ -209,3 +209,6 @@ Show caller avatar, name, location, and noise rating.
 ### [069] feat(ui): implement real-time canvas waveform visualizer - 2026-11-06 17:15:00
 Animated audio waves reflecting ambient telephonic noise.
 
+### [070] feat(ui): add 1-click hackathon preset scenario selector cards - 2026-11-06 17:53:00
+Quick access to Digital Arrest, Telugu Land, and UPI cases.
+
