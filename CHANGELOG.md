@@ -152,3 +152,6 @@ Clear grid displaying BNS sections, scope, and punishments.
 ### [050] feat(fir): add bilingual verbatim telephonic testimony section - 2026-11-06 05:13:00
 Side-by-side original vernacular text and English translation.
 
+### [051] feat(fir): add Evon Golden Hour directive checklist for Thana SHO - 2026-11-06 05:51:00
+Actionable instructions for freezing beneficiary bank accounts.
+
