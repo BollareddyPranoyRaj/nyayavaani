@@ -173,3 +173,6 @@ Created app.py with open CORS for cross-origin callers.
 ### [057] feat(api): mount static frontend files at /static route - 2026-11-06 09:39:00
 Serve CSS, JS, and asset files directly from FastAPI.
 
+### [058] feat(api): add GET /api/health endpoint with model configurations - 2026-11-06 10:17:00
+Expose active Prisma, Timbre, and Evon configurations.
+
