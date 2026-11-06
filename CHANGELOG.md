@@ -182,3 +182,6 @@ Return pre-configured realistic emergency call profiles.
 ### [060] feat(api): add POST /api/call/process-preset endpoint - 2026-11-06 11:33:00
 End-to-end pipeline connecting STT, Evon, TTS, and FIR PDF.
 
+### [061] feat(api): add POST /api/call/process-audio for live browser mic - 2026-11-06 12:11:00
+Accept multipart/form-data WAV uploads for live processing.
+
