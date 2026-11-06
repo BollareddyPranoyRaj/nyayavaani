@@ -236,3 +236,6 @@ Direct download button linking to generated complaint dossier.
 ### [078] feat(ui): add live telephony radar ticker footer - 2026-11-06 22:57:00
 Display active codecs, supported vernaculars, and BNSS compliance.
 
+### [079] style(css): define dark-mode theme variables and color palette - 2026-11-06 23:35:00
+Deep tactical blue and charcoal background scheme.
+
