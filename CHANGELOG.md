@@ -194,3 +194,6 @@ Stream synthetic guidance sample for browser testing.
 ### [064] refactor(api): add centralized error handling and logging - 2026-11-06 14:05:00
 Structured logs for telephonic request telemetry.
 
+### [065] test(api): test all REST endpoints with FastAPI TestClient - 2026-11-06 14:43:00
+100% test coverage for preset processing and downloads.
+
