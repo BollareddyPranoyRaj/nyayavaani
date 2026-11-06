@@ -215,3 +215,6 @@ Quick access to Digital Arrest, Telugu Land, and UPI cases.
 ### [071] feat(ui): add live microphone call record and stop controls - 2026-11-06 18:31:00
 Interactive buttons for browser MediaRecorder API.
 
+### [072] feat(ui): build Timbre vernacular voice agent playback card - 2026-11-06 19:09:00
+Audio preview card with play button and voice persona badge.
+
