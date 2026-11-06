@@ -221,3 +221,6 @@ Audio preview card with play button and voice persona badge.
 ### [073] feat(ui): create Prisma v3.0 verbatim transcription display box - 2026-11-06 19:47:00
 High-contrast container with auto-detected dialect badge.
 
+### [074] feat(ui): create certified English translation readout container - 2026-11-06 20:25:00
+Display certified Thana docket translation.
+
