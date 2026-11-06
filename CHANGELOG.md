@@ -233,3 +233,6 @@ Glowing golden badges for cited criminal sections.
 ### [077] feat(ui): implement instant PDF FIR download action card - 2026-11-06 22:19:00
 Direct download button linking to generated complaint dossier.
 
+### [078] feat(ui): add live telephony radar ticker footer - 2026-11-06 22:57:00
+Display active codecs, supported vernaculars, and BNSS compliance.
+
