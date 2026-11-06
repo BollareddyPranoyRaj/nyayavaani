@@ -260,3 +260,6 @@ Smooth wave physics simulating voice and static interference.
 ### [086] feat(js): bind preset card click handlers to backend API - 2026-11-07 04:01:00
 Trigger automated analysis on preset card selection.
 
+### [087] feat(js): implement DOM updater for transcription and legal trees - 2026-11-07 04:39:00
+Reactive UI updates for BNS sections and extracted entities.
+
