@@ -185,3 +185,6 @@ End-to-end pipeline connecting STT, Evon, TTS, and FIR PDF.
 ### [061] feat(api): add POST /api/call/process-audio for live browser mic - 2026-11-06 12:11:00
 Accept multipart/form-data WAV uploads for live processing.
 
+### [062] feat(api): add GET /api/fir/download/{complaint_id} endpoint - 2026-11-06 12:49:00
+Stream generated PDF documents with proper attachment headers.
+
