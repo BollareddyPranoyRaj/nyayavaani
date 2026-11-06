@@ -224,3 +224,6 @@ High-contrast container with auto-detected dialect badge.
 ### [074] feat(ui): create certified English translation readout container - 2026-11-06 20:25:00
 Display certified Thana docket translation.
 
+### [075] feat(ui): build Evon 30B legal incident classification card - 2026-11-06 21:03:00
+Display categorized crime, financial stake, and urgency tier.
+
