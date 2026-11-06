@@ -188,3 +188,6 @@ Accept multipart/form-data WAV uploads for live processing.
 ### [062] feat(api): add GET /api/fir/download/{complaint_id} endpoint - 2026-11-06 12:49:00
 Stream generated PDF documents with proper attachment headers.
 
+### [063] feat(api): add GET /api/audio/tts-sample endpoint for preview audio - 2026-11-06 13:27:00
+Stream synthetic guidance sample for browser testing.
+
