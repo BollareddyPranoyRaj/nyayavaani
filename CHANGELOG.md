@@ -203,3 +203,6 @@ Built two-column command center structure.
 ### [067] feat(ui): add glowing police emergency dispatch top navigation bar - 2026-11-06 15:59:00
 Included 24x7 emergency badge and active model pills.
 
+### [068] feat(ui): design telephony dispatch card with caller metadata - 2026-11-06 16:37:00
+Show caller avatar, name, location, and noise rating.
+
