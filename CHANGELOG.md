@@ -176,3 +176,6 @@ Serve CSS, JS, and asset files directly from FastAPI.
 ### [058] feat(api): add GET /api/health endpoint with model configurations - 2026-11-06 10:17:00
 Expose active Prisma, Timbre, and Evon configurations.
 
+### [059] feat(api): add GET /api/presets endpoint for 1-click test scenarios - 2026-11-06 10:55:00
+Return pre-configured realistic emergency call profiles.
+
