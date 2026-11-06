@@ -248,3 +248,6 @@ CSS keyframes for blinking emergency radar indicators.
 ### [082] style(css): style typography with Plus Jakarta Sans and JetBrains Mono - 2026-11-07 01:29:00
 Modern, legible typography tailored for demo recordings.
 
+### [083] style(css): add custom scrollbars and subtle border glow effects - 2026-11-07 02:07:00
+Refined card hover states and active preset highlights.
+
