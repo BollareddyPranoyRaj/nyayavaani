@@ -239,3 +239,6 @@ Display active codecs, supported vernaculars, and BNSS compliance.
 ### [079] style(css): define dark-mode theme variables and color palette - 2026-11-06 23:35:00
 Deep tactical blue and charcoal background scheme.
 
+### [080] style(css): add responsive grid layout for desktop and tablet screens - 2026-11-07 00:13:00
+Two-column grid adapting smoothly across screen sizes.
+
