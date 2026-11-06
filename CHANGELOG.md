@@ -155,3 +155,6 @@ Side-by-side original vernacular text and English translation.
 ### [051] feat(fir): add Evon Golden Hour directive checklist for Thana SHO - 2026-11-06 05:51:00
 Actionable instructions for freezing beneficiary bank accounts.
 
+### [052] feat(fir): add digital affirmation block and cryptographic hash placeholder - 2026-11-06 06:29:00
+Section 173 BNSS digital recording affirmation stamp.
+
