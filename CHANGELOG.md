@@ -227,3 +227,6 @@ Display certified Thana docket translation.
 ### [075] feat(ui): build Evon 30B legal incident classification card - 2026-11-06 21:03:00
 Display categorized crime, financial stake, and urgency tier.
 
+### [076] feat(ui): build statutory BNS 2023 sections cited list - 2026-11-06 21:41:00
+Glowing golden badges for cited criminal sections.
+
