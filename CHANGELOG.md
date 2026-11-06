@@ -179,3 +179,6 @@ Expose active Prisma, Timbre, and Evon configurations.
 ### [059] feat(api): add GET /api/presets endpoint for 1-click test scenarios - 2026-11-06 10:55:00
 Return pre-configured realistic emergency call profiles.
 
+### [060] feat(api): add POST /api/call/process-preset endpoint - 2026-11-06 11:33:00
+End-to-end pipeline connecting STT, Evon, TTS, and FIR PDF.
+
