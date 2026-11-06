@@ -167,3 +167,6 @@ Verified output file validity and byte size > 5KB.
 ### [055] style(fir): refine typography colors and border padding in PDF - 2026-11-06 08:23:00
 Enhanced contrast using #1a365d and #9b2c2c legal accents.
 
+### [056] feat(api): initialize FastAPI application with CORS middleware - 2026-11-06 09:01:00
+Created app.py with open CORS for cross-origin callers.
+
