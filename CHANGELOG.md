@@ -263,3 +263,6 @@ Trigger automated analysis on preset card selection.
 ### [087] feat(js): implement DOM updater for transcription and legal trees - 2026-11-07 04:39:00
 Reactive UI updates for BNS sections and extracted entities.
 
+### [088] feat(js): integrate Web Audio API for browser microphone capture - 2026-11-07 05:17:00
+Record audio chunks with MediaRecorder and post to server.
+
