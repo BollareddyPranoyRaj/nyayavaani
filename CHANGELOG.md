@@ -299,3 +299,6 @@ Thread breakdown highlighting Indic voice models and mission.
 ### [099] docs(readme): add detailed quickstart and installation steps - 2026-11-07 12:15:00
 Instructions for running with one single command ./run.sh.
 
+### [100] docs(readme): document alignment with all 10 hackathon award categories - 2026-11-07 12:53:00
+Matrix demonstrating fit for regional, noisy, and impact awards.
+
