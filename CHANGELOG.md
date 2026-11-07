@@ -314,3 +314,6 @@ Verified clean execution of STT, reasoning, TTS, and PDF outputs.
 ### [104] chore(clean): remove temporary test artifacts and clean cache - 2026-11-07 15:25:00
 Clean repository state ready for GitHub public release.
 
+### [105] release(v1.0): finalize NyayaVaani v1.0.0 submission for Gnani AI Challenge - 2026-11-07 16:03:00
+Complete production-ready AI First-Responder release.
+
