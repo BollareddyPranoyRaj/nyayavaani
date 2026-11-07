@@ -284,3 +284,6 @@ Realistic transcription of lottery SMS payment scam.
 ### [094] data(bns): add cross-reference mapping between IPC and BNS 2023 - 2026-11-07 09:05:00
 Comparative legal reference for police docket filing.
 
+### [095] data(telephony): calibrate ambient noise decibel profiles (8dB to 15dB) - 2026-11-07 09:43:00
+Realistic signal-to-noise ratio metrics for each scenario.
+
