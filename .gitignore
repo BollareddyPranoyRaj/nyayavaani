@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+generated_firs/*.pdf
+!generated_firs/.gitkeep
