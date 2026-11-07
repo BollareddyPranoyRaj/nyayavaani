@@ -290,3 +290,6 @@ Realistic signal-to-noise ratio metrics for each scenario.
 ### [096] docs(kit): create 60-second viral demo video script - 2026-11-07 10:21:00
 Second-by-second script optimized for hackathon judges.
 
+### [097] docs(kit): create algorithmic LinkedIn launch post copy - 2026-11-07 10:59:00
+Optimized with hooks, problem statement, and #GnaniAI tags.
+
