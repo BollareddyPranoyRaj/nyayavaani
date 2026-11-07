@@ -308,3 +308,6 @@ Documented inputs and responses for all API routes.
 ### [102] chore(run): create one-click ./run.sh execution script - 2026-11-07 14:09:00
 Automated venv verification, dependency check, and server start.
 
+### [103] test(e2e): run end-to-end integration test suite - 2026-11-07 14:47:00
+Verified clean execution of STT, reasoning, TTS, and PDF outputs.
+
