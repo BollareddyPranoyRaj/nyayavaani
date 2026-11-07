@@ -293,3 +293,6 @@ Second-by-second script optimized for hackathon judges.
 ### [097] docs(kit): create algorithmic LinkedIn launch post copy - 2026-11-07 10:59:00
 Optimized with hooks, problem statement, and #GnaniAI tags.
 
+### [098] docs(kit): create 4-tweet launch thread for X (Twitter) - 2026-11-07 11:37:00
+Thread breakdown highlighting Indic voice models and mission.
+
