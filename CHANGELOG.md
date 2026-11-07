@@ -272,3 +272,6 @@ Ensure voice is heard even if audio device restricts autoplay.
 ### [090] fix(js): handle browser audio permission denials gracefully - 2026-11-07 06:33:00
 Alert user with clear guidance if microphone access is blocked.
 
+### [091] data(cases): add Case 1 Digital Arrest Hinglish dataset - 2026-11-07 07:11:00
+Realistic transcription of Skype video impersonation call.
+
