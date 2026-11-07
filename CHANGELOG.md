@@ -266,3 +266,6 @@ Reactive UI updates for BNS sections and extracted entities.
 ### [088] feat(js): integrate Web Audio API for browser microphone capture - 2026-11-07 05:17:00
 Record audio chunks with MediaRecorder and post to server.
 
+### [089] feat(js): add speech synthesis fallback for immediate voice playback - 2026-11-07 05:55:00
+Ensure voice is heard even if audio device restricts autoplay.
+
