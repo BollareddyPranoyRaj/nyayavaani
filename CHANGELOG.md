@@ -287,3 +287,6 @@ Comparative legal reference for police docket filing.
 ### [095] data(telephony): calibrate ambient noise decibel profiles (8dB to 15dB) - 2026-11-07 09:43:00
 Realistic signal-to-noise ratio metrics for each scenario.
 
+### [096] docs(kit): create 60-second viral demo video script - 2026-11-07 10:21:00
+Second-by-second script optimized for hackathon judges.
+
