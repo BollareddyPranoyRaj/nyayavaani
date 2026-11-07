@@ -296,3 +296,6 @@ Optimized with hooks, problem statement, and #GnaniAI tags.
 ### [098] docs(kit): create 4-tweet launch thread for X (Twitter) - 2026-11-07 11:37:00
 Thread breakdown highlighting Indic voice models and mission.
 
+### [099] docs(readme): add detailed quickstart and installation steps - 2026-11-07 12:15:00
+Instructions for running with one single command ./run.sh.
+
