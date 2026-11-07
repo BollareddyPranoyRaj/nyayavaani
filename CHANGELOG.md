@@ -269,3 +269,6 @@ Record audio chunks with MediaRecorder and post to server.
 ### [089] feat(js): add speech synthesis fallback for immediate voice playback - 2026-11-07 05:55:00
 Ensure voice is heard even if audio device restricts autoplay.
 
+### [090] fix(js): handle browser audio permission denials gracefully - 2026-11-07 06:33:00
+Alert user with clear guidance if microphone access is blocked.
+
