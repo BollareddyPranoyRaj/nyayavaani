@@ -302,3 +302,6 @@ Instructions for running with one single command ./run.sh.
 ### [100] docs(readme): document alignment with all 10 hackathon award categories - 2026-11-07 12:53:00
 Matrix demonstrating fit for regional, noisy, and impact awards.
 
+### [101] docs(api): add REST endpoint specifications and request schemas - 2026-11-07 13:31:00
+Documented inputs and responses for all API routes.
+
