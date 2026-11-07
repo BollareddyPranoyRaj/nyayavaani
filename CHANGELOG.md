@@ -305,3 +305,6 @@ Matrix demonstrating fit for regional, noisy, and impact awards.
 ### [101] docs(api): add REST endpoint specifications and request schemas - 2026-11-07 13:31:00
 Documented inputs and responses for all API routes.
 
+### [102] chore(run): create one-click ./run.sh execution script - 2026-11-07 14:09:00
+Automated venv verification, dependency check, and server start.
+
