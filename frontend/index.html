@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NyayaVaani | AI Telephonic FIR & Legal First-Responder</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Top Bar -->
+    <header class="top-nav">
+      <div class="brand">
+        <div class="brand-badge">
+          <i data-lucide="shield-alert" class="icon-pulse"></i>
+        </div>
+        <div class="brand-titles">
+          <div class="brand-title-row">
+            <h1>NyayaVaani <span class="indic-script">(न्यायवाणी / న్యాయవాణి)</span></h1>
+            <span class="live-pill"><span class="dot"></span> 24x7 EMERGENCY DISPATCH</span>
+          </div>
+          <p class="brand-subtitle">AI Vernacular Telephonic First-Responder for Bharat | Powered by Gnani.ai</p>
+        </div>
+      </div>
+
+      <div class="header-badges">
+        <div class="stat-pill">
+          <i data-lucide="mic"></i>
+          <div>
+            <div class="stat-label">STT ENGINE</div>
+            <div class="stat-val">Gnani Prisma v3.0</div>
+          </div>
+        </div>
+        <div class="stat-pill">
+          <i data-lucide="cpu"></i>
+          <div>
+            <div class="stat-label">REASONING LLM</div>
+            <div class="stat-val">Gnani Evon 30B</div>
+          </div>
+        </div>
+        <div class="stat-pill">
+          <i data-lucide="volume-2"></i>
+          <div>
+            <div class="stat-label">NEURAL TTS</div>
+            <div class="stat-val">Gnani Timbre v3.0</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Grid -->
+    <main class="main-dashboard">
+      <!-- Left Column: Telephony Simulator & Call Control -->
+      <section class="panel left-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <i data-lucide="phone-call" class="accent-icon"></i>
+            <h2>Citizen Telephonic Dispatch</h2>
+          </div>
+          <span class="telephony-codec-badge">8kHz G.711 / AMR</span>
+        </div>
+
+        <!-- Phone State Simulator -->
+        <div class="call-stage-card">
+          <div class="call-meta-row">
+            <div class="caller-avatar">
+              <i data-lucide="user"></i>
+            </div>
+            <div class="caller-details">
+              <div class="caller-name" id="displayCallerName">Ramesh Kumar (Citizen)</div>
+              <div class="caller-sub"><i data-lucide="map-pin"></i> Tier-2 Bharat Call | <span id="callNoiseLevel">8.4 dB Noise</span></div>
+            </div>
+            <div class="call-timer" id="callDuration">00:48</div>
+          </div>
+
+          <!-- Dynamic Audio Waveform -->
+          <div class="waveform-container">
+            <canvas id="waveformCanvas" width="380" height="70"></canvas>
+            <div class="waveform-overlay-label">
+              <span id="noiseFilterStatus"><i data-lucide="zap"></i> Prisma Adaptive Noise Gate Active</span>
+            </div>
+          </div>
+
+          <!-- Call Status Banner -->
+          <div class="call-status-banner" id="callStatusBanner">
+            <i data-lucide="activity"></i> <span id="callStatusText">Ready for Telephonic Distress Call</span>
+          </div>
+
+          <!-- Interactive Action Buttons -->
+          <div class="call-controls">
+            <button class="btn btn-mic" id="btnRecordMic">
+              <i data-lucide="mic"></i> <span>Live Mic Call</span>
+            </button>
+            <button class="btn btn-stop hidden" id="btnStopRecord">
+              <i data-lucide="square"></i> <span>End & Process Call</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick 1-Click Hackathon Demo Presets -->
+        <div class="preset-box">
+          <div class="preset-header">
+            <h3><i data-lucide="sparkles"></i> 1-Click Viral Hackathon Demos</h3>
+            <span class="preset-sub">Pre-loaded Noisy Real Telephonic Cases</span>
+          </div>
+          
+          <div class="preset-cards">
+            <div class="preset-card active" data-preset="case1_digital_arrest">
+              <div class="preset-icon red"><i data-lucide="alert-octagon"></i></div>
+              <div class="preset-info">
+                <h4>Case 1: Digital Arrest Scam</h4>
+                <p>Hinglish code-mix • Traffic/street noise • ₹85,000 extorted</p>
+              </div>
+              <button class="btn-play-preset" title="Simulate Emergency Call"><i data-lucide="play"></i></button>
+            </div>
+
+            <div class="preset-card" data-preset="case2_telugu_land_extortion">
+              <div class="preset-icon orange"><i data-lucide="land-plot"></i></div>
+              <div class="preset-info">
+                <h4>Case 2: Telugu Farmland Threat</h4>
+                <p>Rural Telugu • Tractor & wind noise • Extortion & weapons</p>
+              </div>
+              <button class="btn-play-preset" title="Simulate Emergency Call"><i data-lucide="play"></i></button>
+            </div>
+
+            <div class="preset-card" data-preset="case3_upi_phishing">
+              <div class="preset-icon blue"><i data-lucide="credit-card"></i></div>
+              <div class="preset-info">
+                <h4>Case 3: Instant UPI Phishing</h4>
+                <p>Hinglish/English • Fast financial scam • Golden hour alert</p>
+              </div>
+              <button class="btn-play-preset" title="Simulate Emergency Call"><i data-lucide="play"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Voice Synthesizer Output Player -->
+        <div class="tts-player-card">
+          <div class="tts-header">
+            <i data-lucide="volume-2" class="green-icon"></i>
+            <div>
+              <h4>Timbre Vernacular Voice Agent Response</h4>
+              <p>Empathetic regional calming delivery</p>
+            </div>
+          </div>
+          <div class="tts-audio-controls">
+            <button class="btn-audio-play" id="btnPlayTTS"><i data-lucide="play"></i> Play Calming Guidance</button>
+            <span class="voice-tag" id="voicePersonaTag">Voice: Nalini (Hindi Empathy)</span>
+          </div>
+          <div class="tts-text-preview" id="ttsPreviewText">
+            "रमेश जी, बिल्कुल शांत हो जाइए। आपकी शिकायत भारतीय न्याय संहिता धारा 308 और 319 के तहत दर्ज कर ली गई है।"
+          </div>
+        </div>
+      </section>
+
+      <!-- Center & Right: Real-time Transcripts, Evon Legal Tree & Generated FIR -->
+      <section class="panel right-panel">
+        <div class="panel-header">
+          <div class="panel-title">
+            <i data-lucide="scale" class="accent-icon"></i>
+            <h2>Evon 30B Legal Intelligence & BNS 2023 Mapping</h2>
+          </div>
+          <div class="live-status-pill" id="goldenHourBadge">
+            <i data-lucide="clock"></i> GOLDEN HOUR ACTIVE
+          </div>
+        </div>
+
+        <!-- STT Live Verbatim Stream -->
+        <div class="stt-display-box">
+          <div class="box-subhead">
+            <span><i data-lucide="subtitles"></i> PRISMA v3.0 CODE-MIXED TRANSCRIPTION</span>
+            <span class="dialect-badge" id="dialectBadge">hi-IN (Hinglish) • Auto-Detected</span>
+          </div>
+          <div class="transcript-content" id="sttTranscript">
+            "सर प्लीज हेल्प करिए! मुझे सुबह 10 बजे एक कॉल आया... वो बोल रहे थे कि वो CBI और Mumbai Police से बात कर रहे हैं। उन्होंने स्काइप पे वीडियो कॉल किया और बोले कि मेरे आधार कार्ड से ताइवान एक पार्सल भेजा गया है..."
+          </div>
+          <div class="translation-content" id="sttTranslation">
+            <b>Certified Thana Translation:</b> "Sir please help me! I received a call at 10 AM... they said they were calling from CBI and Mumbai Police. They video called me on Skype and said a parcel with drugs and passports was sent to Taiwan using my Aadhaar card..."
+          </div>
+        </div>
+
+        <!-- Evon Legal Mapping Tree -->
+        <div class="legal-analysis-grid">
+          <div class="legal-card crime-info">
+            <div class="legal-card-header">
+              <i data-lucide="file-warning"></i>
+              <h3>Incident Classification</h3>
+            </div>
+            <div class="crime-val" id="crimeType">Cyber Impersonation & Digital Arrest Extortion</div>
+            <div class="stat-row">
+              <span class="label">Amount at Stake:</span>
+              <span class="val red-text" id="amountAtStake">₹85,000</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Jurisdiction:</span>
+              <span class="val" id="jurisdictionVal">Cyber Crime Police Station</span>
+            </div>
+            <div class="stat-row">
+              <span class="label">Emergency Tier:</span>
+              <span class="val urgent" id="emergencyTier">CRITICAL</span>
+            </div>
+          </div>
+
+          <div class="legal-card bns-sections">
+            <div class="legal-card-header">
+              <i data-lucide="book-open"></i>
+              <h3>Statutory Sections Cited (BNS 2023 / IT Act)</h3>
+            </div>
+            <div class="sections-list" id="sectionsList">
+              <div class="section-item">
+                <div class="sec-badge">Section 308(2) BNS 2023</div>
+                <div class="sec-desc"><b>Extortion by Threat of Arrest</b> - Coercing money transfer under fear of criminal detention.</div>
+              </div>
+              <div class="section-item">
+                <div class="sec-badge">Section 319(2) BNS 2023</div>
+                <div class="sec-desc"><b>Cheating by Personation</b> - Posing as law enforcement officers on Skype video call.</div>
+              </div>
+              <div class="section-item">
+                <div class="sec-badge">Section 66D IT Act 2000</div>
+                <div class="sec-desc"><b>Cheating using Computer Resource</b> - Using VoIP and encrypted messaging for fraud.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Generated FIR Action Bar & PDF Download -->
+        <div class="fir-action-card">
+          <div class="fir-card-left">
+            <div class="fir-stamp-icon">
+              <i data-lucide="file-check-2"></i>
+            </div>
+            <div>
+              <div class="fir-title-row">
+                <h3>Official Police FIR & Cyber Complaint Dossier</h3>
+                <span class="doc-code" id="complaintCode">#NV-BNS-2026-AP8921</span>
+              </div>
+              <p class="fir-desc">Adhering to BNSS 2023 Form 154 • Bilingual English + Vernacular • Digital Hash Certified</p>
+            </div>
+          </div>
+          <div class="fir-card-actions">
+            <a href="#" id="btnDownloadPDF" class="btn btn-download" target="_blank">
+              <i data-lucide="download"></i> Download Official PDF FIR
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- Bottom Ticker -->
+      <footer class="bottom-bar">
+        <div class="ticker-label"><i data-lucide="radio"></i> LIVE TELEPHONY RADAR:</div>
+        <div class="ticker-text">
+          <span>Active Codecs: G.711u / AMR-WB</span> • 
+          <span>Supported Vernaculars: Hindi, Telugu, Tamil, Kannada, Bengali, Marathi, Gujarati, Punjabi, Hinglish</span> • 
+          <span>Compliant with Bharatiya Nagarik Suraksha Sanhita (BNSS 2023)</span>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
