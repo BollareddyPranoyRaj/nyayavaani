@@ -281,3 +281,6 @@ Realistic transcription of Warangal land dispute threat.
 ### [093] data(cases): add Case 3 UPI subsidy phishing fraud dataset - 2026-11-07 08:27:00
 Realistic transcription of lottery SMS payment scam.
 
+### [094] data(bns): add cross-reference mapping between IPC and BNS 2023 - 2026-11-07 09:05:00
+Comparative legal reference for police docket filing.
+
