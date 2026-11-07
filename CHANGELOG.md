@@ -311,3 +311,6 @@ Automated venv verification, dependency check, and server start.
 ### [103] test(e2e): run end-to-end integration test suite - 2026-11-07 14:47:00
 Verified clean execution of STT, reasoning, TTS, and PDF outputs.
 
+### [104] chore(clean): remove temporary test artifacts and clean cache - 2026-11-07 15:25:00
+Clean repository state ready for GitHub public release.
+
