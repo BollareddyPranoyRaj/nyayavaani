@@ -275,3 +275,6 @@ Alert user with clear guidance if microphone access is blocked.
 ### [091] data(cases): add Case 1 Digital Arrest Hinglish dataset - 2026-11-07 07:11:00
 Realistic transcription of Skype video impersonation call.
 
+### [092] data(cases): add Case 2 Rural Telugu farmland extortion dataset - 2026-11-07 07:49:00
+Realistic transcription of Warangal land dispute threat.
+
