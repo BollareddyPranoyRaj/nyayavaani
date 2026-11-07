@@ -278,3 +278,6 @@ Realistic transcription of Skype video impersonation call.
 ### [092] data(cases): add Case 2 Rural Telugu farmland extortion dataset - 2026-11-07 07:49:00
 Realistic transcription of Warangal land dispute threat.
 
+### [093] data(cases): add Case 3 UPI subsidy phishing fraud dataset - 2026-11-07 08:27:00
+Realistic transcription of lottery SMS payment scam.
+
