@@ -9,6 +9,16 @@ SAMPLE_AUDIO_DIR = BASE_DIR / "sample_audio"
 GENERATED_FIRS_DIR.mkdir(exist_ok=True)
 SAMPLE_AUDIO_DIR.mkdir(exist_ok=True)
 
+# Auto-load .env file if it exists
+env_file = BASE_DIR / ".env"
+if env_file.exists():
+    with open(env_file) as f:
+        for line in f:
+            line = line.strip()
+            if line and not line.startswith("#") and "=" in line:
+                k, v = line.split("=", 1)
+                os.environ[k.strip()] = v.strip()
+
 class Settings(BaseModel):
     PROJECT_NAME: str = "NyayaVaani - AI Telephonic FIR & Legal First-Responder"
     VERSION: str = "1.0.0"
@@ -28,6 +38,6 @@ class Settings(BaseModel):
     
     # Evon Reasoning Defaults
     EVON_MODEL_NAME: str = "gnani-ai/evon-30b-instruct"
-    USE_SIMULATOR_FALLBACK: bool = True
+    USE_SIMULATOR_FALLBACK: bool = False if os.getenv("GNANI_API_KEY") else True
 
 settings = Settings()
