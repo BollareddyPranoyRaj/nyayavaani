@@ -47,6 +47,10 @@ class CustomTTSRequest(BaseModel):
 async def serve_index():
     return FileResponse(str(FRONTEND_DIR / "index.html"))
 
+@app.get("/favicon.ico", include_in_schema=False)
+async def favicon():
+    return Response(status_code=204)
+
 @app.get("/api/health")
 async def health_check():
     return {
