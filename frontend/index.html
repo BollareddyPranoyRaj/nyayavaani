@@ -110,31 +110,31 @@
           </div>
           
           <div class="preset-cards">
-            <div class="preset-card active" data-preset="case1_digital_arrest">
+            <div class="preset-card active" data-preset="case1_digital_arrest" onclick="selectPreset('case1_digital_arrest', true)">
               <div class="preset-icon red"><i data-lucide="alert-octagon"></i></div>
               <div class="preset-info">
                 <h4>Case 1: Digital Arrest Scam</h4>
                 <p>Hinglish code-mix • Traffic/street noise • ₹85,000 extorted</p>
               </div>
-              <button class="btn-play-preset" title="Simulate Emergency Call"><i data-lucide="play"></i></button>
+              <button type="button" class="btn-play-preset" title="Simulate Emergency Call" onclick="selectPreset('case1_digital_arrest', true)"><i data-lucide="play"></i></button>
             </div>
 
-            <div class="preset-card" data-preset="case2_telugu_land_extortion">
+            <div class="preset-card" data-preset="case2_telugu_land_extortion" onclick="selectPreset('case2_telugu_land_extortion', true)">
               <div class="preset-icon orange"><i data-lucide="land-plot"></i></div>
               <div class="preset-info">
                 <h4>Case 2: Telugu Farmland Threat</h4>
                 <p>Rural Telugu • Tractor & wind noise • Extortion & weapons</p>
               </div>
-              <button class="btn-play-preset" title="Simulate Emergency Call"><i data-lucide="play"></i></button>
+              <button type="button" class="btn-play-preset" title="Simulate Emergency Call" onclick="selectPreset('case2_telugu_land_extortion', true)"><i data-lucide="play"></i></button>
             </div>
 
-            <div class="preset-card" data-preset="case3_upi_phishing">
+            <div class="preset-card" data-preset="case3_upi_phishing" onclick="selectPreset('case3_upi_phishing', true)">
               <div class="preset-icon blue"><i data-lucide="credit-card"></i></div>
               <div class="preset-info">
                 <h4>Case 3: Instant UPI Phishing</h4>
                 <p>Hinglish/English • Fast financial scam • Golden hour alert</p>
               </div>
-              <button class="btn-play-preset" title="Simulate Emergency Call"><i data-lucide="play"></i></button>
+              <button type="button" class="btn-play-preset" title="Simulate Emergency Call" onclick="selectPreset('case3_upi_phishing', true)"><i data-lucide="play"></i></button>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@
             </div>
           </div>
           <div class="tts-audio-controls">
-            <button class="btn-audio-play" id="btnPlayTTS"><i data-lucide="play"></i> Play Calming Guidance</button>
+            <button type="button" class="btn-audio-play" id="btnPlayTTS" onclick="playTTSGuidance()"><i data-lucide="play"></i> Play Calming Guidance</button>
             <span class="voice-tag" id="voicePersonaTag">Voice: Nalini (Hindi Empathy)</span>
           </div>
           <div class="tts-text-preview" id="ttsPreviewText">

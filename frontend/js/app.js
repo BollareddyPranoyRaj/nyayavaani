@@ -8,16 +8,28 @@ let currentComplaintId = "NV-BNS-2026-AP8921";
 let activePreset = "case1_digital_arrest";
 let waveformAnimId = null;
 
-// Initialize Lucide icons
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.lucide) {
-    lucide.createIcons();
+// Ensure initialization runs whether DOM is already ready or loading
+function init() {
+  console.log("NyayaVaani initializing...");
+  try {
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  } catch (err) {
+    console.warn("Lucide icons warning:", err);
   }
+  
   initWaveform();
   bindEvents();
-  // Trigger initial preset state load
-  selectPreset("case1_digital_arrest", false);
-});
+  console.log("NyayaVaani events bound successfully.");
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', init);
+} else {
+  // DOM already loaded (common on fast local servers)
+  init();
+}
 
 // Canvas Waveform Animation
 function initWaveform() {
@@ -57,9 +69,25 @@ function initWaveform() {
 function bindEvents() {
   // Preset card clicks
   document.querySelectorAll('.preset-card').forEach(card => {
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (e) => {
+      e.preventDefault();
       const presetKey = card.getAttribute('data-preset');
+      console.log("Preset selected:", presetKey);
       selectPreset(presetKey, true);
+    });
+  });
+
+  // Play button inside cards
+  document.querySelectorAll('.btn-play-preset').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      e.preventDefault();
+      const card = btn.closest('.preset-card');
+      if (card) {
+        const presetKey = card.getAttribute('data-preset');
+        console.log("Play button clicked for:", presetKey);
+        selectPreset(presetKey, true);
+      }
     });
   });
 
@@ -67,16 +95,32 @@ function bindEvents() {
   const btnRecordMic = document.getElementById('btnRecordMic');
   const btnStopRecord = document.getElementById('btnStopRecord');
 
-  btnRecordMic.addEventListener('click', startMicRecording);
-  btnStopRecord.addEventListener('click', stopMicRecording);
+  if (btnRecordMic) {
+    btnRecordMic.addEventListener('click', (e) => {
+      e.preventDefault();
+      startMicRecording();
+    });
+  }
+  
+  if (btnStopRecord) {
+    btnStopRecord.addEventListener('click', (e) => {
+      e.preventDefault();
+      stopMicRecording();
+    });
+  }
 
   // Play TTS guidance
   const btnPlayTTS = document.getElementById('btnPlayTTS');
-  btnPlayTTS.addEventListener('click', playTTSGuidance);
+  if (btnPlayTTS) {
+    btnPlayTTS.addEventListener('click', (e) => {
+      e.preventDefault();
+      playTTSGuidance();
+    });
+  }
 }
 
 // Preset selection & processing
-async function selectPreset(presetKey, runExecution = true) {
+window.selectPreset = async function(presetKey, runExecution = true) {
   activePreset = presetKey;
   document.querySelectorAll('.preset-card').forEach(c => c.classList.remove('active'));
   const activeCard = document.querySelector(`[data-preset="${presetKey}"]`);
@@ -88,19 +132,19 @@ async function selectPreset(presetKey, runExecution = true) {
   const noiseLevel = document.getElementById('callNoiseLevel');
 
   if (presetKey === "case1_digital_arrest") {
-    callerName.innerText = "Ramesh Kumar (Citizen)";
-    noiseLevel.innerText = "8.4 dB Noise (Traffic/Phone Static)";
+    if (callerName) callerName.innerText = "Ramesh Kumar (Citizen)";
+    if (noiseLevel) noiseLevel.innerText = "8.4 dB Noise (Traffic/Phone Static)";
   } else if (presetKey === "case2_telugu_land_extortion") {
-    callerName.innerText = "Ramayya (Farmer, Warangal)";
-    noiseLevel.innerText = "11.2 dB Noise (Tractor/Wind)";
+    if (callerName) callerName.innerText = "Ramayya (Farmer, Warangal)";
+    if (noiseLevel) noiseLevel.innerText = "11.2 dB Noise (Tractor/Wind)";
   } else {
-    callerName.innerText = "Rahul Verma (Student)";
-    noiseLevel.innerText = "14.5 dB Noise (Cellular Handset)";
+    if (callerName) callerName.innerText = "Rahul Verma (Student)";
+    if (noiseLevel) noiseLevel.innerText = "14.5 dB Noise (Cellular Handset)";
   }
 
   if (runExecution) {
-    statusText.innerText = "Connecting telephonic line & analyzing with Prisma v3.0...";
-    statusBanner.style.color = "#fbbf24";
+    if (statusText) statusText.innerText = "Connecting telephonic line & analyzing with Prisma v3.0...";
+    if (statusBanner) statusBanner.style.color = "#fbbf24";
 
     try {
       const response = await fetch('/api/call/process-preset', {
@@ -111,60 +155,80 @@ async function selectPreset(presetKey, runExecution = true) {
       const data = await response.json();
       if (data.success) {
         updateDashboard(data);
-        statusText.innerText = "Incident Triaged & Official FIR Ready";
-        statusBanner.style.color = "#34d399";
+        if (statusText) statusText.innerText = "Incident Triaged & Official FIR Ready";
+        if (statusBanner) statusBanner.style.color = "#34d399";
       }
     } catch (e) {
-      console.error(e);
-      statusText.innerText = "Error processing call";
-      statusBanner.style.color = "#f87171";
+      console.error("Error processing preset:", e);
+      if (statusText) statusText.innerText = "Error processing call";
+      if (statusBanner) statusBanner.style.color = "#f87171";
     }
   }
-}
+};
 
 // Update dashboard with real backend data
 function updateDashboard(data) {
   currentComplaintId = data.complaint_id;
 
   // 1. STT Transcript & Translation
-  document.getElementById('sttTranscript').innerText = `"${data.prisma_stt.transcript_codemix}"`;
-  document.getElementById('sttTranslation').innerHTML = `<b>Certified Thana Translation:</b> "${data.prisma_stt.transcript_en}"`;
-  document.getElementById('dialectBadge').innerText = data.call_telemetry.detected_lang;
+  const sttTranscript = document.getElementById('sttTranscript');
+  const sttTranslation = document.getElementById('sttTranslation');
+  const dialectBadge = document.getElementById('dialectBadge');
+
+  if (sttTranscript) sttTranscript.innerText = `"${data.prisma_stt.transcript_codemix}"`;
+  if (sttTranslation) sttTranslation.innerHTML = `<b>Certified Thana Translation:</b> "${data.prisma_stt.transcript_en}"`;
+  if (dialectBadge) dialectBadge.innerText = data.call_telemetry.detected_lang;
 
   // 2. Evon Reasoning
   const evon = data.evon_reasoning;
-  document.getElementById('crimeType').innerText = evon.incident_type;
-  document.getElementById('amountAtStake').innerText = evon.extracted_facts.amount_at_stake || "N/A";
-  document.getElementById('jurisdictionVal').innerText = evon.extracted_facts.jurisdiction_type;
-  document.getElementById('emergencyTier').innerText = evon.emergency_tier;
+  const crimeType = document.getElementById('crimeType');
+  const amountAtStake = document.getElementById('amountAtStake');
+  const jurisdictionVal = document.getElementById('jurisdictionVal');
+  const emergencyTier = document.getElementById('emergencyTier');
+
+  if (crimeType) crimeType.innerText = evon.incident_type;
+  if (amountAtStake) amountAtStake.innerText = evon.extracted_facts.amount_at_stake || "N/A";
+  if (jurisdictionVal) jurisdictionVal.innerText = evon.extracted_facts.jurisdiction_type;
+  if (emergencyTier) emergencyTier.innerText = evon.emergency_tier;
 
   // Legal Sections List
   const sectionsList = document.getElementById('sectionsList');
-  sectionsList.innerHTML = '';
-  evon.legal_sections.forEach(sec => {
-    const item = document.createElement('div');
-    item.className = 'section-item';
-    item.innerHTML = `
-      <div class="sec-badge">${sec.section}</div>
-      <div class="sec-desc"><b>${sec.title}</b> - ${sec.relevance} <br/><span style="color:#94a3b8;font-size:0.7rem;">Penalty: ${sec.penalty}</span></div>
-    `;
-    sectionsList.appendChild(item);
-  });
+  if (sectionsList) {
+    sectionsList.innerHTML = '';
+    evon.legal_sections.forEach(sec => {
+      const item = document.createElement('div');
+      item.className = 'section-item';
+      item.innerHTML = `
+        <div class="sec-badge">${sec.section}</div>
+        <div class="sec-desc"><b>${sec.title}</b> - ${sec.relevance} <br/><span style="color:#94a3b8;font-size:0.7rem;">Penalty: ${sec.penalty}</span></div>
+      `;
+      sectionsList.appendChild(item);
+    });
+  }
 
   // 3. Timbre TTS
-  document.getElementById('ttsPreviewText').innerText = `"${evon.timbre_voice_script}"`;
-  document.getElementById('voicePersonaTag').innerText = activePreset.includes('telugu') 
-    ? "Voice: Kavya (Telugu Regional)" 
-    : "Voice: Nalini (Hindi Regional)";
+  const ttsPreviewText = document.getElementById('ttsPreviewText');
+  const voicePersonaTag = document.getElementById('voicePersonaTag');
+
+  if (ttsPreviewText) ttsPreviewText.innerText = `"${evon.timbre_voice_script}"`;
+  if (voicePersonaTag) {
+    voicePersonaTag.innerText = activePreset.includes('telugu') 
+      ? "Voice: Kavya (Telugu Regional)" 
+      : "Voice: Nalini (Hindi Regional)";
+  }
 
   // 4. FIR Download
-  document.getElementById('complaintCode').innerText = `#${currentComplaintId}`;
+  const complaintCode = document.getElementById('complaintCode');
   const btnDownload = document.getElementById('btnDownloadPDF');
-  btnDownload.href = data.pdf_download_url;
 
-  if (window.lucide) {
-    lucide.createIcons();
-  }
+  if (complaintCode) complaintCode.innerText = `#${currentComplaintId}`;
+  if (btnDownload) btnDownload.href = data.pdf_download_url;
+
+  try {
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  } catch (err) {}
 }
 
 // Mic Recording Handling
@@ -227,15 +291,16 @@ async function uploadRecordedAudio() {
 }
 
 // Play synthesized TTS guidance
-function playTTSGuidance() {
-  // Use Web Audio API to play sample TTS or synthetic audio
+window.playTTSGuidance = function() {
   const audio = new Audio('/api/audio/tts-sample');
   audio.play().catch(e => {
-    console.log("Audio autoplay prevented or sample loaded:", e);
-    // Fallback: Browser native speech synthesis for immediate audible experience
-    const text = document.getElementById('ttsPreviewText').innerText.replace(/"/g, '');
-    const utter = new SpeechSynthesisUtterance(text);
-    utter.rate = 0.95;
-    window.speechSynthesis.speak(utter);
+    console.log("Audio autoplay prevented or sample loaded, falling back to speech synthesis:", e);
+    const previewEl = document.getElementById('ttsPreviewText');
+    if (previewEl && 'speechSynthesis' in window) {
+      const text = previewEl.innerText.replace(/"/g, '').replace(/<[^>]+>/g, '');
+      const utter = new SpeechSynthesisUtterance(text);
+      utter.rate = 0.95;
+      window.speechSynthesis.speak(utter);
+    }
   });
-}
+};
