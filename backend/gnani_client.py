@@ -37,6 +37,24 @@ PRESET_CASES = {
         "transcript_en": "Hello officer, I just got scammed. An SMS came saying 'Congratulations ₹5,000 electricity subsidy approved, click link to accept into PhonePe'. When I clicked, it opened a fake payment gateway screen and asked for UPI PIN. The moment I entered it, ₹50,000 got debited from my State Bank account! Transaction ID is 432198765432. Please help me stop the transaction!",
         "detected_lang": "en-IN (Indian English Code-mixed)",
         "snr_db": "14.5 dB (Cellular Handset Noise)"
+    },
+    "case4_fake_job_visa": {
+        "title": "Fake Overseas Job & Visa Fraud (Hindi + English)",
+        "language": "hi",
+        "audio_description": "Jobseeker calling after paying registration fee for forged appointment letter.",
+        "transcript_codemix": "सर मेरे साथ बहुत बड़ा फ्रॉड हुआ है। मुझे टेलीग्राम पर कनाडा में डेटा एंट्री जॉब का ऑफर आया। उन्होंने मुझे प्रॉपर स्टैम्प्ड ऑफर लेटर भेजा और मेडिकल फीस के नाम पर ₹60,000 ले लिए। अब उनका नंबर बंद आ रहा है। प्लीज मेरी मदद करिए!",
+        "transcript_en": "Sir I have been defrauded. I received an offer for a data entry job in Canada via Telegram. They sent a stamped appointment letter and took ₹60,000 for medical fees. Now their phone numbers are switched off. Please help me!",
+        "detected_lang": "hi-IN (Hinglish Job Fraud)",
+        "snr_db": "9.8 dB (Urban Room Acoustic)"
+    },
+    "case5_domestic_harassment": {
+        "title": "Domestic Cruelty & Intimidation (Section 85 BNS)",
+        "language": "hi",
+        "audio_description": "Distressed woman calling emergency helpline regarding domestic violence and physical threats.",
+        "transcript_codemix": "नमस्ते मैडम, मुझे बहुत डर लग रहा है। मेरे ससुराल वाले मुझे दहेज के लिए बहुत प्रताड़ित कर रहे हैं और कल रात उन्होंने मुझे जान से मारने की धमकी दी। मुझे अपने बच्चों की सुरक्षा के लिए तुरंत पुलिस सहायता चाहिए।",
+        "transcript_en": "Hello Madam, I am terrified. My in-laws are severely harassing me for dowry and threatened my life last night. I need urgent police protection for myself and my children.",
+        "detected_lang": "hi-IN (Domestic Emergency)",
+        "snr_db": "6.5 dB (Low Background Noise)"
     }
 }
 

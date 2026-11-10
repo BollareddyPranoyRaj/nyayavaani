@@ -12,6 +12,8 @@ from backend.config import settings, GENERATED_FIRS_DIR
 from backend.gnani_client import gnani_client, PRESET_CASES
 from backend.evon_reasoning import evon_engine
 from backend.fir_generator import generate_official_fir_pdf
+from backend.jurisdiction_engine import jurisdiction_router
+from backend.telephony_webhook import telephony_router
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("NyayaVaani")
@@ -29,6 +31,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Register Webhook Routers
+app.include_router(telephony_router)
 
 # Mount frontend static files
 FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
@@ -70,6 +75,17 @@ async def get_presets():
         "cases": PRESET_CASES
     }
 
+class JurisdictionRequest(BaseModel):
+    query: str = ""
+    pin_code: str = ""
+
+@app.post("/api/jurisdiction/resolve")
+async def resolve_jurisdiction(req: JurisdictionRequest):
+    return {
+        "success": True,
+        "jurisdiction": jurisdiction_router.resolve_jurisdiction(req.query, req.pin_code)
+    }
+
 @app.post("/api/call/process-preset")
 async def process_preset_call(req: PresetProcessRequest):
     case = PRESET_CASES.get(req.preset_key)
@@ -77,6 +93,9 @@ async def process_preset_call(req: PresetProcessRequest):
         raise HTTPException(status_code=404, detail="Preset case not found")
         
     complaint_id = f"NV-BNS-2026-{uuid.uuid4().hex[:6].upper()}"
+    
+    # Resolve Jurisdictional Station
+    jurisdiction_info = jurisdiction_router.resolve_jurisdiction(case.get("transcript_en", ""))
     
     # 1. Prisma STT Stage (handles code-mixed telephonic speech)
     transcript_codemix = case["transcript_codemix"]
