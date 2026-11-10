@@ -2,7 +2,8 @@
 ### AI Vernacular Telephonic Emergency FIR & Legal First-Responder for Bharat
 
 > Built for the **Great Indian AI Internship Challenge** powered by **Gnani.ai**.  
-> **Team of Two:** Bollareddy Pranoy Raj & Teammate
+> **Team of Two:** Bollareddy Pranoy Raj & Teammate  
+> 📄 **[Read 1-Page Solution Pitch (SOLUTION_PITCH.md)](SOLUTION_PITCH.md)** | **[Download 1-Page Pitch PDF](SOLUTION_PITCH.pdf)**
 
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-009688.svg?style=flat&logo=fastapi)](https://fastapi.tiangolo.com)
 [![Gnani Prisma](https://img.shields.io/badge/ASR-Gnani%20Prisma%20v3.0-blue)](https://gnani.ai)
